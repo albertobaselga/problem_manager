@@ -11,7 +11,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'problem_manager',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'problem_manager',
