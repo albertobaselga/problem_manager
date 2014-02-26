@@ -1,7 +1,7 @@
-from problem_manager import *
+from models import *
 from django.contrib import admin
 
-class problemAdmin((admin.ModelAdmin):
+class problemAdmin(admin.ModelAdmin):
 	list_display = ('problem_id','priority','description','status','related_tickets')
 	list_filter = ['problem_id','priority','description','status','related_tickets']
 	search_fields = ['description']

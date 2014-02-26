@@ -7,7 +7,7 @@ PROB_WORK_STATUS = (('low','Low'),('medium','Medium'),('high','High'))
 PROB_LTS_STATUS = (('low','Low'),('medium','Medium'),('high','High'))
 
 
-class problem (model.Model):
+class problem (models.Model):
 	problem_id = models.CharField('Prob ID',max_length=8, unique=True)
 	priority = models.CharField('Priority',max_length=50, choices=PROB_PRIORITY)
 	description =  models.TextField('Description')
